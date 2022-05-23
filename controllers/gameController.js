@@ -22,6 +22,7 @@ async function check(req, res){
         let pass = req.body.pass;
         if(user == "user" && pass == "user"){
             console.log("masuk");
+            res.redirect('/dataGamer/viewGame');
         }else{
             console.log("salah");
         }
