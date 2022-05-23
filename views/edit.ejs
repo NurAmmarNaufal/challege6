@@ -1,0 +1,18 @@
+<h1>Edit Data Gamer</h1>
+<form action="/dataGamer/updateGame/<%= object[0]['id'] %>" method="post" >
+    <label for="username">User Name</label><br>
+    <input type="text" id="username" name="user_name" value="<%= object[0]['user_name'] %>"/><br>
+    <label for="nama">Nama</label><br>
+    <input type="text" id="nama" name="nama" value="<%= object[0]['nama'] %>"/><br>
+    <label for="usia">Usia</label><br>
+    <input type="text" id="usia" name="usia" value="<%= object[0]['usia'] %>"/><br>
+    <label for="kota">Kota</label><br>
+    <input type="text" id="kota" name="kota" value="<%= object[0]['kota'] %>"/><br>
+    <label for="password">Password</label><br>
+    <input type="text" id="password" name="password" value="<%= object[0]['password'] %>"/><br>
+    <label for="game">Game</label><br>
+    <input type="text" id="game" name="nama_game_dimainkan" value="<%= object[0]['game'] %>"/><br>
+    <label for="durasi">Durasi</label><br>
+    <input type="text" id="durasi" name="selama" value="<%= object[0]['durasi'] %>"/><br><br><br>
+    <button type="submit">Edit Data</button>
+</form>

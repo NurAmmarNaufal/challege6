@@ -1,0 +1,46 @@
+<style>
+    th, td{
+        border-bottom: 1px solid black;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    td{
+        border-left: 1px solid black;
+    }
+</style>
+
+<h1>Data Para Gamer</h1>
+<div class="aa"></div>
+
+<table>
+    <tr>
+        <th>User Name</th>
+        <th>Nama</th>
+        <th>Usia</th>
+        <th>Kota</th>
+        <th>Game</th>
+        <th>Durasi</th>
+        <th>Password</th>
+        <th>Action</th>
+    </tr>
+    <% object.forEach(e => { %>
+    <tr>
+        <td><%= e.user_name %></td>
+        <td><%= e.nama %></td>
+        <td><%= e.usia %></td>
+        <td><%= e.kota %></td>
+        <td><%= e.game %></td>
+        <td><%= e.durasi %></td>
+        <td><%= e.password %></td>
+        <td>
+            <button><a href="/dataGamer/editGame/<%= e.id %>">Edit</a></button>
+            <button><a href="/dataGamer/deleteGame/<%= e.id %>">Delete</a></button>
+        </td>
+    </tr>
+    <% }) %>
+
+</table>
+<br><br>
+<button><a href="/dataGamer/addForm">Add Gamer Data</a></button>
